@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Full history needed to compare against initial commit
+          fetch-depth: 0 # Full history needed to compare against initial commit
 
       - name: Verify protected files unchanged
         id: integrity
@@ -41,9 +41,9 @@ jobs:
 
           declare -A EXPECTED_CHECKSUMS
           EXPECTED_CHECKSUMS=(
-            ["vitest.config.ts"]="REPLACE_WITH_ACTUAL_CHECKSUM"
-            ["tsconfig.json"]="REPLACE_WITH_ACTUAL_CHECKSUM"
-            ["src/setupTests.ts"]="REPLACE_WITH_ACTUAL_CHECKSUM"
+            ["vitest.config.ts"]="d5bbb271ecb8bec082028a5e9c60f5fc397b27ca62f8c286b5aaa129e8dc1c2c"
+            ["tsconfig.json"]="3e8d1142c6e1c174caf48da033978653fd14bf3e8b34683d08331c8e3e027826"
+            ["src/setupTests.ts"]="a46d66851af2c056e805fdd574bf5ec3adb1181c43c5e41f0a1c592e338afe64"
           )
 
           CHECKSUM_FAILURES=""
@@ -153,8 +153,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -184,8 +184,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
