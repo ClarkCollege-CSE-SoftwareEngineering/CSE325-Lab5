@@ -1,6 +1,6 @@
-# Lab 6: Connect React to a Mock API
+# Lab 5: Connect React to a Mock API
 
-### Week 7 | Frontend-Backend I — APIs
+### Week 6 | Frontend-Backend I — APIs
 
 ## Overview
 
@@ -9,7 +9,7 @@ In this lab, you'll connect a React frontend to a mock REST API using the Fetch 
 By the end of this lab, you'll understand how frontend applications communicate with backend services through HTTP, and you'll have experience managing the asynchronous nature of network requests in React.
 
 **Prerequisites:**
-- Completed Labs 1–5
+- Completed Labs 1–4
 - Week 7 readings completed
 - Node.js 20+ installed
 - Familiarity with React components and hooks (from Labs 3–4)
@@ -58,8 +58,8 @@ This lab directly applies concepts from your Week 7 readings:
 ### Step 1: Clone Your Repository
 
 ```bash
-git clone https://github.com/ClarkCollege-CSE-SoftwareEngineering/lab-6-book-api-YOURUSERNAME.git
-cd lab-6-book-api-YOURUSERNAME
+git clone https://github.com/ClarkCollege-CSE-SoftwareEngineering/lab-5-book-api-YOURUSERNAME.git
+cd lab-5-book-api-YOURUSERNAME
 ```
 
 ### Step 2: Install Dependencies
@@ -1158,6 +1158,6 @@ GitHub Actions does not run json-server, so any test that hits the real endpoint
 2. Verify GitHub Actions passes all checks
 3. Submit your repository URL via Canvas
 
-**Due:** Monday, February 23, 2026 at 11:59 PM
+**Due:** Tuesday, February 17, 2026 at 11:59 PM
 
 > **Important:** The repository stops accepting commits at the deadline. Make sure to push your final work before then.
